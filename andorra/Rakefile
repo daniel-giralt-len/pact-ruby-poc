@@ -1,0 +1,6 @@
+require 'pact_broker/client/tasks'
+
+PactBroker::Client::PublicationTask.new do |task|
+  task.consumer_version = '1.0.0'
+  task.pact_broker_base_url = "http://localhost:8080"
+end
